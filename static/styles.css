@@ -1,0 +1,43 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Add more custom styling here */
+
