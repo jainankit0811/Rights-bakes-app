@@ -1,21 +1,28 @@
 <!-- templates/index.html -->
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Recipe Blog</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1>Welcome to the Recipe Blog!</h1>
-        <ul>
-            {% for recipe in recipes %}
-                <li>
-                    <h2><a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.title }}</a></h2>
-                    <p>{{ recipe.content }}</p>
-                </li>
-            {% endfor %}
-        </ul>
+      <h1 class="h1">Welcome to the Recipe Blog!</h1>
+      <ul class="ul">
+        {% for recipe in recipes %}
+        <li>
+          <h2 class="h2">
+            <a href="{{ url_for('recipe', id=recipe.id) }}"
+              >{{ recipe.title }}</a
+            >
+          </h2>
+          <p class="p">{{ recipe.content }}</p>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-</body>
+  </body>
 </html>
