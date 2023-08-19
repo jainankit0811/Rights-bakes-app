@@ -70,7 +70,7 @@ def signin():
         else:
             return "Invalid credentials. Please try again."
 
-    return render_template('signin.html')
+    return render_template('./sign_in.html')
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -84,7 +84,7 @@ def signup():
 
         return redirect(url_for('signin'))
 
-    return render_template('signup.html')
+    return render_template('./signup.html')
 
 
 
