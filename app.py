@@ -87,20 +87,6 @@ def signup():
     return render_template('signup.html')
 
 
-@app.route("/login", methods=["GET", "POST"])
-def login():
-    if request.method == "POST":
-        username = request.form["username"]
-        password = request.form["password"]
-
-        if username in users and users[username] == password:
-            return redirect(url_for("account"))
-        else:
-            return "Invalid credentials. Please try again."
-
-    return render_template("login.html")
-
-
 @app.route("/filter")
 @app.route("/filter")
 def filter():
