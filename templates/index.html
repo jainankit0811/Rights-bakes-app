@@ -1,28 +1,12 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Recipe Blog</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='styles.css') }}"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
   </head>
   <body>
-    <div class="container">
-      <h1 class="h1">Welcome to the Recipe Blog!</h1>
-      <ul class="ul">
-        {% for recipe in recipes %}
-        <li>
-          <h2 class="h2">
-            <a href="{{ url_for('recipe', id=recipe.id) }}"
-              >{{ recipe.title }}</a
-            >
-          </h2>
-          <p class="p">{{ recipe.content }}</p>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+    <h1>Welcome to the Index Page!</h1>
+    <p>This is an example of an index page using Flask.</p>
   </body>
 </html>

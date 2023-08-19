@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block title %}Account{% endblock %}
+
+{% block content %}
+    <h1>Account Information</h1>
+    <p>Welcome to your account page. Here you can view and manage your account details.</p>
+    <ul>
+        <li>Username: {{ username }}</li>
+        <li>Email: {{ email }}</li>
+        <li>Membership Status: {{ membership_status }}</li>
+    </ul>
+{% endblock %}

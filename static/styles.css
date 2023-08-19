@@ -5,7 +5,7 @@ body {
   margin: auto;
   padding: auto;
   background-color: #ffffff;
-  background-image: url('Rights-bakes-app\templates\image\Back_ground_img.jpeg');
+  background-image: url("../templates/image/Back_ground_img.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
