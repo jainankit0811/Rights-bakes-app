@@ -87,7 +87,7 @@ def signup():
     return render_template('signup.html')
 
 
-@app.route("/filter")
+
 @app.route("/filter")
 def filter():
     return render_template("filter.html")
